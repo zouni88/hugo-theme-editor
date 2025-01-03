@@ -32,6 +32,7 @@ main {
 
 aside.sidebar {
     width: 15%;
+    overflow-y: scroll;
 }
 
 article {
