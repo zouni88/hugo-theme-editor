@@ -35,6 +35,23 @@ aside.sidebar {
     overflow-y: scroll;
 }
 
+/* Webkit浏览器隐藏滚动条 */
+/* aside::-webkit-scrollbar {
+    display: none;
+} */
+
+/* 定制滚动条的宽度和背景颜色 */
+aside::-webkit-scrollbar {
+    width: 8px; /* 定义滚动条的宽度 */
+    background-color: #25212d; /* 定义滚动条轨道的背景颜色 */
+  }
+   
+  /* 定制滚动条滑块的样式 */
+  aside::-webkit-scrollbar-thumb {
+    background-color: #97b7e1; /* 定制滑块颜色 */
+    border-radius: 10px; /* 定制滑块边角的圆滑程度 */
+  }
+
 article {
     width: var(--artile_main_width);
 }

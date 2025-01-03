@@ -345,7 +345,7 @@ ul.section-tree > li.closed-dir::before {
     border-color: white;
     border-width: 1pt 1pt 0 0;
     border-style: solid;
-    padding: 3pt;
+    padding: 2pt;
     transform: rotate(45deg);
     display: inline-block;
     position: relative;
@@ -361,7 +361,7 @@ ul.section-tree > li.opened-dir::before {
     border-color: white;
     border-width: 1pt 1pt 0 0;
     border-style: solid;
-    padding: 3pt;
+    padding: 2pt;
     transform: rotate(135deg);
     display: inline-block;
     position: relative;

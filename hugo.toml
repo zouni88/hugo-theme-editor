@@ -131,7 +131,7 @@
         # 1. the footer of all page
         # 2. the author filed in the single page. (this could be overwritten by the frontmatter of the single page.)
         # Keep it an empty string or remove this item will hide it from the page
-        author = "Jing Wang"
+        author = "zouni88"
         
         # Website description for RSS and SEO. Theme will generate a <meta> tag for this item
         description = "This is my new hugo site"
