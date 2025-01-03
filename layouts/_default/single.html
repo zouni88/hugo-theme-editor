@@ -37,15 +37,33 @@
 
                 {{ end }}
 
-                {{ with $.Site.Params.page.showDate }}
+                <!-- {{ with $.Site.Params.page.showDate }}
                     <div class="date" title="{{ i18n "date"| title }}">
                         <i class="bi bi-calendar3"></i>
                         <time
-                            datetime="{{ $.Page.Date.Format $.Site.Params.page.dateFormat }}"
+                           datetime="{{ $.Page.Date.Format $.Site.Params.page.dateFormat }}"
                             >{{ $.Page.Date.Format $.Site.Params.page.dateFormat }}
                         </time>
                     </div>
-                {{ end }}
+                {{ end }} -->
+
+
+                <!-- Created Date -->
+            {{- $pubdate := .PublishDate.Format "Jan 02, 2006" }}
+            <!-- Last Updated Date -->
+            {{- if .Lastmod }}
+                {{- $lastmod := .Lastmod.Format "2006-01-02" }}
+                    {{- if ne $lastmod $pubdate }}
+                    <div class="date" title="{{ i18n "date"| title }}">
+                        <i class="bi bi-calendar3"></i>
+                        <time class="article-time--updated" datetime="{{ .Lastmod }}" title="{{ .Lastmod }}">
+                            {{ $lastmod }}
+                        </time>
+                    </div>
+                {{- end }}
+            {{- end }}
+
+
 
                 {{ with $.Site.Params.page.showTimeToRead }}
                     <div

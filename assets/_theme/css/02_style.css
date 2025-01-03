@@ -45,7 +45,7 @@ header > div.header_left {
     float: left;
     position: relative;
     left: 5pt;
-    top: 0pt;
+    top: 5pt;
 }
 
 header > div.header_left > img.logo {

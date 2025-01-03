@@ -6,6 +6,8 @@
                     <img class="logo" src="{{ "{{ . }}" | relLangURL }}"
                     alt="logo" />
                 </a>
+                <script>
+                </script>
             {{ else }}
                 <a href="/">
                     <img class="logo" src="{{ "{{ . }}" | relLangURL }}"
@@ -16,7 +18,7 @@
         {{ end }}
     </div>
 
-    <div class="header_middle">
+    <div class="header_middle" style="font-size: 10pt;">
         {{ if .IsHome }}
             {{ $.Site.Params.header.title }}
         {{ else }}
